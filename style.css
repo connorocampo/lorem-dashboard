@@ -460,8 +460,22 @@ footer {
   }
 }
 
+@media (min-width: 565px) {
+  .cog-desktop {
+    display: none;
+  }
+}
+
 @media (max-width: 565px) {
   .hidden-caret-down {
     display: none;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .cog-desktop {
+    font-size: 20px;
   }
 }
