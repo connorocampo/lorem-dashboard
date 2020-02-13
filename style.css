@@ -443,3 +443,9 @@ footer {
     margin-top: 1.5em;
   }
 }
+
+@media (max-width: 565px) {
+  .hidden-caret-down {
+    display: none;
+  }
+}
