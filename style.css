@@ -388,9 +388,30 @@ input:checked + .slider:before {
   cursor: pointer;
 }
 
+/*
+** footer
+*/
+
 footer {
+  align-items: center;
   background: #83887d;
+  display: flex;
+  justify-content: center;
   height: 100px;
+}
+
+.footer-content {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.fa-heart {
+  margin: 0 5px;
+}
+
+.footer-credit {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /*
