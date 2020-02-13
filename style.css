@@ -82,12 +82,21 @@
   padding: 0 2em;
 }
 
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .bottom-nav-link {
   color: #111111;
-  display: block;
+  display: inline-block;
   font-size: 14px;
   padding: 11px 15px 10px 15px;
   text-decoration: none;
+}
+
+.lorem-nav-anchor {
+  white-space: nowrap;
 }
 
 .bottom-nav-link:hover {
@@ -173,8 +182,11 @@
 
 table {
   border-collapse: collapse;
+  border-spacing: 0;
   font-size: 14px;
   max-width: 100%;
+  overflow-x: auto;
+  width: 100%;
 }
 
 td {
@@ -441,6 +453,10 @@ footer {
   .password-inputs input[type="submit"] {
     flex-basis: auto;
     margin-top: 1.5em;
+  }
+
+  .scrollmenu {
+    box-shadow: -2px 0px 10px #999999 inset;
   }
 }
 
