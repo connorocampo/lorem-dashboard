@@ -139,7 +139,7 @@
 }
 
 .bottom-nav--dropdown-menu .bottom-nav--dropdown-menu--link:hover::after {
-  content: " ►";
+  /* content: " ►"; */
   font-size: 14px;
   margin-left: 80px;
 }
