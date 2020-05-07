@@ -183,9 +183,8 @@
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  border: 1px solid #ddd;
   font-size: 14px;
-  max-width: 100%;
-  overflow-x: auto;
   width: 100%;
 }
 
@@ -193,10 +192,18 @@ td {
   border: 1px solid #f5f5f5;
   padding: 10px;
   text-align: left;
+  white-space: nowrap;
 }
 
 tr:nth-child(even) {
   background-color: #f5f5f5;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
 }
 
 .table-link {
@@ -406,7 +413,7 @@ input:checked + .slider:before {
 
 footer {
   align-items: center;
-  background: #83887d;
+  background: #296f0e;
   display: flex;
   justify-content: center;
   height: 100px;
@@ -458,6 +465,11 @@ footer {
   .scrollmenu {
     box-shadow: -2px 0px 10px #999999 inset;
   }
+
+  .responsive-table {
+    overflow-x: auto;
+    max-width: 90vw;
+  }
 }
 
 @media (min-width: 565px) {
@@ -477,5 +489,9 @@ footer {
 
   .cog-desktop {
     font-size: 20px;
+  }
+
+  .cog-desktop:hover {
+    cursor: pointer;
   }
 }
